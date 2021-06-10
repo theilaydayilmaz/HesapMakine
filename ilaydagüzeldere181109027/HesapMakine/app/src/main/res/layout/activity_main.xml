@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/num_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/num_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_2"
+        app:layout_constraintVertical_bias="0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnVirgul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="?attr/colorButtonNormal"
+        android:text=","
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_equal"
+        app:layout_constraintStart_toEndOf="@id/num_2"
+        app:layout_constraintTop_toBottomOf="@+id/num_3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="="
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/num_3"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopla"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="1"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn0"
+        app:layout_constraintEnd_toStartOf="@+id/num_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnTopla"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="+"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_equal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num_3"
+        app:layout_constraintTop_toBottomOf="@+id/btnCikar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVirgul"
+        app:layout_constraintEnd_toStartOf="@+id/btnTopla"
+        app:layout_constraintStart_toEndOf="@+id/num_2"
+        app:layout_constraintTop_toBottomOf="@+id/num_6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="2"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn0"
+        app:layout_constraintEnd_toStartOf="@+id/num_3"
+        app:layout_constraintStart_toEndOf="@+id/num_1"
+        app:layout_constraintTop_toBottomOf="@+id/num_5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="4"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_1"
+        app:layout_constraintEnd_toStartOf="@+id/num_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="5"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_2"
+        app:layout_constraintEnd_toStartOf="@+id/num_6"
+        app:layout_constraintStart_toEndOf="@+id/num_4"
+        app:layout_constraintTop_toBottomOf="@+id/num_8"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="6"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_3"
+        app:layout_constraintEnd_toStartOf="@+id/btnCikar"
+        app:layout_constraintStart_toEndOf="@+id/num_5"
+        app:layout_constraintTop_toBottomOf="@+id/num_9"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCikar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="-"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTopla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num_6"
+        app:layout_constraintTop_toBottomOf="@+id/btnCarp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="8"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_5"
+        app:layout_constraintEnd_toStartOf="@+id/num_9"
+        app:layout_constraintStart_toEndOf="@+id/num_7"
+        app:layout_constraintTop_toBottomOf="@+id/button_kareAl"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCarp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="\*"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCikar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num_9"
+        app:layout_constraintTop_toBottomOf="@+id/btnBol"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="9"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_6"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarp"
+        app:layout_constraintStart_toEndOf="@+id/num_8"
+        app:layout_constraintTop_toBottomOf="@+id/button_kupAl"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="\AC"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_7"
+        app:layout_constraintEnd_toStartOf="@+id/button_kareAl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesapEkrani"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_kareAl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="^2"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_8"
+        app:layout_constraintEnd_toStartOf="@+id/button_kupAl"
+        app:layout_constraintStart_toEndOf="@+id/button_delete"
+        app:layout_constraintTop_toBottomOf="@+id/hesapEkrani"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnBol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="\/"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCarp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_kupAl"
+        app:layout_constraintTop_toBottomOf="@+id/hesapEkrani"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_kupAl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="^3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_9"
+        app:layout_constraintEnd_toStartOf="@+id/btnBol"
+        app:layout_constraintStart_toEndOf="@+id/button_kareAl"
+        app:layout_constraintTop_toBottomOf="@+id/hesapEkrani"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/num_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:text="7"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num_4"
+        app:layout_constraintEnd_toStartOf="@+id/num_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_delete"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/hesapEkrani"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical|right"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="75sp"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

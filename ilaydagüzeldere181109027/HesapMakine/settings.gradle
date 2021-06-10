@@ -1,0 +1,2 @@
+rootProject.name = "HesapMakine"
+include ':app'
